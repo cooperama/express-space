@@ -26,16 +26,9 @@ const missionsCtrl = require('./controllers/missionsController');
 
 app.set('view engine', 'ejs');
 
-// INDEX Route
-// send data to 'missions/index.ejs' view
-// the view should display just the names of each mission
-// display the mission names as <li> in a <ul> with the class name "missions"
 
 app.get('/', (req, res) => {
-  const marsMission = marsMissions;
-  res.render('missions/index', {
-    marsMission: marsMission
-  });
+  res.render('index');
 });
 
 app.use('/missions', missionsCtrl);

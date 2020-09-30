@@ -10,9 +10,10 @@
 
   <ul class="missions">
 
-    <% for (let i = 0; i < marsMission.length; i++) { %>
-      <li><%= marsMission[i].name %></li>
-    <% } %>
+  <% for (let i = 0; i < marsMission.length; i++) { %>
+      <% const path = `/missions/${i}`; %>
+      <li><a href="<%= path %>"><%= marsMission[i].name %></a></li>
+  <% } %>
 
   </ul>
 
