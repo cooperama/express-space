@@ -22,6 +22,7 @@ const app = express();
 // PORT
 const port = 3000;
 const marsMissions = require('./models/marsMission');
+const missionsCtrl = require('./controllers/missionsController');
 
 app.set('view engine', 'ejs');
 
@@ -35,8 +36,9 @@ app.get('/', (req, res) => {
   res.render('missions/index', {
     marsMission: marsMission
   });
-})
+});
 
+app.use('/missions', missionsCtrl);
 
 // LISTENER
 app.listen(port, function() {
