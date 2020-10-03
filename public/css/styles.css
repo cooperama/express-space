@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.home-page {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 1% 3%;
+  position: relative;
+  background: url('../images/launch.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mission {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 1% 3%;
+  background: url('../images/mars3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  flex-direction: row;
+}
+
+.index {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+
+nav {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+}
+
+.mission-description {
+  color: white;
+  padding: 0 20px;
+  margin-right: 8%;
+}
+
+.mission-image {
+  width: 85%;
+}
+
+.mission-image-div {
+  width: 500px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.63);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin-top: 5%;
+  font-size: 60px;
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.733);
+}
+
+a {
+  font-size: 20px;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: font-size 250ms;
+}
+
+a:visited {
+  color: rgb(255, 255, 255);
+}
+
+.missions a:hover {
+  font-size: 23px;
+  transition: font-size 250ms;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 20px; 
+}
+
+.title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

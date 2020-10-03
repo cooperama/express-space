@@ -3,16 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <title>Missions to Mars</title>
 </head>
-<body>
-  <h1>Missions to Mars</h1>
+<body class="index mission">
+
+  <div>
+    <%- include('../partials/navbar') %>
+  </div>
+
+  <h1>Missions To Mars</h1>
 
   <ul class="missions">
 
   <% for (let i = 0; i < marsMission.length; i++) { %>
-      <% const path = `/missions/${i}`; %>
-      <li><a href="<%= path %>"><%= marsMission[i].name %></a></li>
+
+      <li><a href="/missions/<%= i %>"><%= marsMission[i].name %></a></li>
+     
   <% } %>
 
   </ul>

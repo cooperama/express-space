@@ -3,14 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <title>Missions to Mars</title>
 </head>
-<body>
-  
-  <p><%= mission.name %></p>
-  <p><%= mission.launchDate %></p>
-  <p><%= mission.operator %></p>
-  <p><%= mission.missionType %></p>
+<body class="mission">
+  <div>
+    <%- include('../partials/navbar') %>
+  </div>
+
+  <div class="mission-description">
+    <p><strong class="title">Name _  </strong> <%= mission.name %></p>
+    <p><strong class="title">Launch Date _  </strong> <%= mission.launchDate %></p>
+    <p><strong class="title">Operator _  </strong> <%= mission.operator %></p>
+    <p><strong class="title">Mission Type _  </strong> <%= mission.missionType %></p>
+  </div>
+
+  <div class="mission-image-div">
+    <img class="mission-image" src="<%= mission.img %> " alt="<%= mission.name %> ">
+  </div>
 
 </body>
 </html>
